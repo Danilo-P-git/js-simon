@@ -37,8 +37,10 @@ var numeriInseriti = []
 setTimeout(prompt5, 5000)
 console.log(numeriInseriti);
 
-var numeriInComune = $.grep(arrayNumeri ,
-  function(element) {
-  return $.inArray(element, numeriInseriti) !== -1;
-})
-console.log(numeriInComune);
+var indovinato = 0;
+  for (var i = 0; i < numeriInseriti.length; i++) {
+    if (arrayNumeri.includes(numeriUtente[i])) {
+      indovinato++;
+    }
+  };
+  console.log(indovinato);
