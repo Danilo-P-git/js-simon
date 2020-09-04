@@ -32,15 +32,15 @@ for (var i = 0; i < 5; i++) {
 console.log(arrayNumeri);
 
 alert("Ricordati questi numeri " + arrayNumeri)
-var numeriInseriti = []
+var numeriInseriti = [];
+prompt5();
 
-setTimeout(prompt5, 5000)
 console.log(numeriInseriti);
 
 var indovinato = 0;
   for (var i = 0; i < numeriInseriti.length; i++) {
-    if (arrayNumeri.includes(numeriUtente[i])) {
-      indovinato + 1;
+    if (arrayNumeri.includes(numeriInseriti[i])) {
+      indovinato++;
     }
   };
   console.log(indovinato);
