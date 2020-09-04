@@ -42,4 +42,3 @@ console.log(arrayNumeri);
 alert("Ricordati questi numeri " + arrayNumeri)
 
 setTimeout(prompt5, 5000)
-console.log(prompt5());
