@@ -10,7 +10,18 @@ if (numero >= min && numero <= max) {
 }
 }
 
-function prompt5() {
+var arrayNumeri = []
+
+for (var i = 0; i < 5; i++) {
+  var numeriGenerati = genNumeri(1,10);
+  arrayNumeri.push(numeriGenerati);
+}
+console.log(arrayNumeri);
+
+alert("Ricordati questi numeri " + arrayNumeri)
+var numeriInseriti = []
+
+setTimeout(function() {
   while (numeriInseriti.length < 5) {
     var numeroInseritoUtente = parseInt(prompt("inserisci un numero tra 1 e 10"));
     if (isNaN(numeroInseritoUtente) || rangeNumero(numeroInseritoUtente, 1 , 10) == false) {
@@ -21,20 +32,7 @@ function prompt5() {
     }
   }
   return numeriInseriti;
-}
-
-var arrayNumeri = []
-
-for (var i = 0; i < 5; i++) {
-  var numeriGenerati = genNumeri(1,10);
-  arrayNumeri.push(numeriGenerati);
-}
-console.log(arrayNumeri);
-
-alert("Ricordati questi numeri " + arrayNumeri)
-var numeriInseriti = [];
-prompt5();
-
+}, 5000)
 console.log(numeriInseriti);
 
 var indovinato = 0;
