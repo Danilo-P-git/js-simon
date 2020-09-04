@@ -40,7 +40,7 @@ console.log(numeriInseriti);
 var indovinato = 0;
   for (var i = 0; i < numeriInseriti.length; i++) {
     if (arrayNumeri.includes(numeriUtente[i])) {
-      indovinato++;
+      indovinato + 1;
     }
   };
   console.log(indovinato);
